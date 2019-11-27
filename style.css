@@ -16,14 +16,11 @@ body {
   color: #3a6073;
 }
 #tile-container {
-  position: absolute;
-  left: 40%;
-  top: 120px;
+  justify-content: center;
   display: flex;
   flex-direction: row;
-  width: 700px;
   height: 400px;
-  margin: auto;
+  margin: 0 auto;
 }
 .tile {
   width: 130px;
@@ -38,11 +35,12 @@ body {
 }
 
 #message {
-  width: 750px;
-  height: 150px;
-  position: absolute;
-  right: 600px;
-  top: 600px;
+  width: 500px;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
 }
 
 #message > p {
@@ -51,9 +49,9 @@ body {
 }
 
 #reset {
-  position: absolute;
-  right: 910px;
-  top: 550px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
   cursor: pointer;
 }
 
@@ -70,4 +68,12 @@ body {
 #reset > button:focus {
   outline: none;
   border: none;
+}
+
+/* RESPONSIVE STYLING */
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 500px) {
 }
