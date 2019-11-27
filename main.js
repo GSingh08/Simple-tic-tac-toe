@@ -9,10 +9,14 @@ var gameOver = false;
 
 //Reset Button
 resetButton.addEventListener("click", function() {
+  playerXCombo = "";
+  playerOCombo = "";
+  message.innerHTML = "";
+  gameOver = false;
   for (var i = 0; i < gameTiles.length; i++) {
     gameTiles[i].innerHTML = "";
+    gameTiles[i].style.pointerEvents = "auto";
   }
-  message.innerHTML = "";
 });
 
 //Loop Through Each Tile Element and Give Each Tile Element a Click Listener and give it "makeAMove" function

@@ -54,4 +54,5 @@ body {
   position: absolute;
   right: 930px;
   top: 550px;
+  cursor: pointer;
 }
