@@ -77,3 +77,9 @@ body {
 
 @media screen and (max-width: 500px) {
 }
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
